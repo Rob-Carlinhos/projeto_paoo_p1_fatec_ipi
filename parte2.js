@@ -9,10 +9,10 @@ const {
     UNITS,
     IDIOM,
     CNT,
-    URL_BASE
+    URL_BASE2
 } = process.env
 
-const url = `${URL_BASE}?appid=${APPID}&q=${CITY_NAME}&lat=${LAT}&lon=${LON}&units=${UNITS}&lang=${IDIOM}&cnt=${CNT}`
+const url = `${URL_BASE2}?appid=${APPID}&q=${CITY_NAME}&lat=${LAT}&lon=${LON}&units=${UNITS}&lang=${IDIOM}&cnt=${CNT}`
 
 axios.get(url)
 .then(res => {
